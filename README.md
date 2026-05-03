@@ -1,4 +1,4 @@
-# Atividade Somativa 2 - Tecnologias para Desenvolvimento Web
+<img width="1681" height="750" alt="image" src="https://github.com/user-attachments/assets/38010779-4de3-44bf-ab75-6d2d5ed18ef2" /># Atividade Somativa 2 - Tecnologias para Desenvolvimento Web
 
 Projeto desenvolvido em React para Atividade Somativa 2 de Tecnologias para Desenvolvimento Web. O sistema utiliza React Router DOM para navegação entre páginas, Firebase Authentication para cadastro e validação de usuários e Cloud Firestore para armazenar e exibir os dados cadastrados.
 
@@ -22,7 +22,8 @@ Projeto desenvolvido em React para Atividade Somativa 2 de Tecnologias para Dese
 
 - Página de Login com validação no Firebase Authentication.
 
-
+## Link do Projeto
+https://somativa-pucpr-dev-web.netlify.app/
 
 
 
