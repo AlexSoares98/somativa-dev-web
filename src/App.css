@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: url("./assets/pucprbg.webp") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: #ffffffec;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 0, 18, 0.18);
+  pointer-events: none;
+}
+
+a {
+  color: #ffffffec;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 560px;
+  padding: 42px 38px;
+  border-radius: 12px;
+  border-top-left-radius: 52px;
+  border-bottom-right-radius: 52px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.28);
+}
+
+.dashboard-card {
+  max-width: 640px;
+}
+
+.auth-title {
+  margin: 0 0 12px 0;
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.1;
+  color: #ffffffec;
+  font-weight: 600;
+}
+
+.auth-subtitle {
+  margin: 0 0 28px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffffec;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  height: 54px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  color: #2d0a18;
+  transition: 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #353535;
+  font-weight: 300;
+}
+
+.form-group input:focus {
+  border-color: #ffffffec;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.input-error {
+  border: 1px solid #ffb3b3 !important;
+  box-shadow: 0 0 0 4px rgba(255, 77, 77, 0.14);
+}
+
+.field-error {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ffd2d2;
+  text-align: left;
+}
+
+.primary-button {
+  width: 100%;
+  height: 54px;
+  margin-top: 32px;
+  border: none;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #8d1140;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-1px);
+  background: #ffffffec;
+}
+
+.primary-button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.status-message {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.status-message.success {
+  background: rgba(43, 163, 95, 0.18);
+  border: 1px solid rgba(99, 230, 161, 0.28);
+  color: #e6fff0;
+}
+
+.status-message.error {
+  background: rgba(255, 77, 77, 0.16);
+  border: 1px solid rgba(255, 128, 128, 0.28);
+  color: #ffe3e3;
+}
+
+.status-message.info {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+.bottom-text {
+  margin: 22px 0 0 0;
+  text-align: center;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.profile-label {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.profile-value {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.button-group {
+  margin-top: 24px;
+}
